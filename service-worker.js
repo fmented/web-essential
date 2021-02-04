@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.9cd20cc56abb0cdadd94adaccc80f298.js"
+  "./precache-manifest.9cd20cc56abb0cdadd94adaccc80f298.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "manifest-generator"});
+workbox.core.setCacheNameDetails({prefix: "web-essential"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
